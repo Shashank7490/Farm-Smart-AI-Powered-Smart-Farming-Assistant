@@ -149,6 +149,10 @@ cd FarmProject
 streamlit run appO.py
 
 
+Model Files
+Saved model files (.pkl, .pth, .joblib) are not committed to the repo due to file size. Download them from [Google Drive / Hugging Face — add link here] and place them in the models/ directory, then update the load paths in appO.py accordingly.
+
+
 
 Tech Stack
 
