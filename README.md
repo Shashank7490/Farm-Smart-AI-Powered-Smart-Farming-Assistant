@@ -52,51 +52,35 @@ Powered by Google Translate (deep-translator) — every alert, label, and recomm
 
 Repository Structure
 
-FarmProject/
-│
-├── app.py                              # Entry point (stable version)
-├── appO.py                             # Main Streamlit application
-│
-├── config/
-│   └── settings.py                     # App-wide configuration & constants
-│
-├── data/
-│   ├── Crop_recommendation.csv         # Crop recommendation training data
-│   ├── crop_yield.csv                  # Crop yield dataset
-│   └── Custom_Crops_yield_Historical_Dataset.csv  # Extended yield history
-│
-├── logic/
-│   ├── advisory.py                     # Weather risk & pest advisory engine
-│   └── similarity.py                   # Crop similarity scoring logic
-│
-├── models/
-│   ├── CNNforSoilType.pth              # ResNet-18 soil type classifier (PyTorch)
-│   ├── crop_model.pkl                  # Crop recommendation model (v1)
-│   ├── crop_model1.pkl                 # Crop recommendation model (v2)
-│   ├── crop_recommendation_model.pkl   # Crop recommendation model (primary)
-│   ├── crop_recommendation_model1.pkl  # Crop recommendation model (secondary)
-│   ├── fertilizer_recommender_xgb.joblib  # XGBoost fertilizer recommender
-│   ├── label_encoder.pkl               # Label encoder for soil/crop classes
-│   ├── mlp_yield_predictor.pkl         # MLP yield prediction model
-│   ├── xgboost_full_pipeline.pkl       # XGBoost soil classification pipeline
-│   ├── model_loader.py                 # Centralised model loading utilities
-│   ├── soil_model.py                   # Soil model inference logic
-│   └── yield_model.py                  # Yield model inference logic
-│
-├── services/
-│   ├── location_service.py             # GPS, IP geolocation & reverse geocoding
-│   ├── translation_service.py          # Google Translate integration
-│   └── weather_service.py             # Open-Meteo API (live + historical, async)
-│
-├── ui/
-│   ├── components.py                   # Reusable Streamlit UI components
-│   └── navigation.py                   # Sidebar & page routing
-│
-├── utils/
-│   └── helpers.py                      # Shared helper functions
-│
-└── other_necessities/                  # Images and PDFs for testing purposes
-
+| Path | Description |
+|---|---|
+| app.py | Entry point (stable version) |
+| appO.py | Main Streamlit application |
+| config/settings.py | App-wide configuration & constants |
+| data/Crop_recommendation.csv | Crop recommendation training data |
+| data/crop_yield.csv | Crop yield dataset |
+| data/Custom_Crops_yield_Historical_Dataset.csv | Extended yield history |
+| logic/advisory.py | Weather risk & pest advisory engine |
+| logic/similarity.py | Crop similarity scoring logic |
+| models/CNNforSoilType.pth | ResNet-18 soil type classifier (PyTorch) |
+| models/crop_model.pkl | Crop recommendation model (v1) |
+| models/crop_model1.pkl | Crop recommendation model (v2) |
+| models/crop_recommendation_model.pkl | Crop recommendation model (primary) |
+| models/crop_recommendation_model1.pkl | Crop recommendation model (secondary) |
+| models/fertilizer_recommender_xgb.joblib | XGBoost fertilizer recommender |
+| models/label_encoder.pkl | Label encoder for soil/crop classes |
+| models/mlp_yield_predictor.pkl | MLP yield prediction model |
+| models/xgboost_full_pipeline.pkl | XGBoost soil classification pipeline |
+| models/model_loader.py | Centralised model loading utilities |
+| models/soil_model.py | Soil model inference logic |
+| models/yield_model.py | Yield model inference logic |
+| services/location_service.py | GPS, IP geolocation & reverse geocoding |
+| services/translation_service.py | Google Translate integration |
+| services/weather_service.py | Open-Meteo API (live + historical, async) |
+| ui/components.py | Reusable Streamlit UI components |
+| ui/navigation.py | Sidebar & page routing |
+| utils/helpers.py | Shared helper functions |
+| other_necessities/ | Notebooks, scripts & miscellaneous files |
 
 
 ML Models
